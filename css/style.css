@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    
+}
+
+.wrapper{
+   width: 320px;
+    margin: 50px 100px;
+}
+
+.header_img{
+    width: 320px;
+}
