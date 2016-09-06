@@ -1,17 +1,51 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	height: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	font: 18px Arial, sans-serif;
+	height: 100%;
+}
+.wrapper {
+	min-width: 320px;
+	max-width: 1920px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
 }
 
-body{
-    
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+	height: 869px;
+    background-image: url(../img/bg.png)
 }
 
-.wrapper{
-   width: 320px;
-    margin: 50px 100px;
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.content {
+	padding: 0 0 114px;
 }
 
-.header_img{
-    width: 320px;
+
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+	margin: -114px auto 0;
+	min-width: 320px;
+	max-width: 1920px;
+	height: 114px;
+	background: #BFF08E;
+	position: relative;
 }
