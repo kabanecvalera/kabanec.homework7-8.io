@@ -7,37 +7,31 @@
 	font-style: normal;
 }
 
-* {
+*{
 	margin: 0;
 	padding: 0;
 }
 
 body {
 	font: 18px Arial, sans-serif;
-	height: 100%;
-    min-width: 320px;
-    max-width: 1920px;
+    height: 100%;
 }
 
-@media (min-width: 320px){
-	.wrapper{
-    width: 320px;
+.wrapper{
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
 }
 
 header{
     background-image: url(../img/bg.png);
-    
+    background-position: center;
+    height: 516px;
 }
-    .menu{
-    margin: 0 auto;
+
+.menu{
     padding: 20px 0;
-   
 }
-
-.menu-txt{
-   padding-top: 253px;
-}
-
 
 .logo-box {
     float: left;
@@ -60,49 +54,142 @@ ul {
 }
 
 .menu-first{
-    text-decoration: none;
     display: block;
-    transition: .5s linear;
+    margin: 1px 47px 0 0;
     position: relative;
+    text-decoration: none;
     color: #fff;
     font: 400 24px / 33.724px 'League Gothic';
-    
-}
-
-.menu-second{
-   visibility: hidden; 
-}
-
-.menu-first:after {
-  content: "";
-  width: 0;
-  height: 2px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background: #ed12ed;
-  transition: all 0.5s linear;  
 }
 
 .menu-first:hover:after{
-  width: 100%;
+    content: "";
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    top: 32px;
+    left: 28px;
+    background: #E3C8F1;
+    transition: all 0.5s linear; 
+}
+
+.menu-second{
+    visibility: hidden; 
+}
+
+.menu-slider{
+    position: relative;
+}
+
+.menu-txt{
+    margin: 263px 0 0 52px;
+}
+
+.menu-lorem{
+    font: 400 36px / 24px 'League Gothic';
+    color: #fefefe;
+}
+
+.menu-dream{
+    font: 400 18px / 24px 'League Gothic';
+    color: #edbfff;
+    padding-top: 5px;
+}
+
+.menu-last{
+   visibility: hidden; 
+}
+
+.menu-slider-nav{
+    
+}
+
+.arrow-left{
+    position: absolute;
+    top: 2px;
+    left: 8px;
+}
+
+.arrow-right{
+    position: absolute;
+    top: 2px;
+    right: 9px; 
+}
+
+.menu-slider-position{
+    width: 100px;
+    height: 17px;
+    display: inline-block;
+    margin: 32px 0 0 110px;
+}
+
+.block-slider-position1,
+.block-slider-position2,
+.block-slider-position3,
+.block-slider-position4{
+    width: 10px;
+    height: 10px;
+    border: 3px solid #000;
+    border-radius: 50%;
+    background: #000;
+    float: left;
+    margin: 2px 3px;
+}
+ 
+.block-slider-position1:hover,
+.block-slider-position2:hover,
+.block-slider-position3:hover,
+.block-slider-position4:hover{
+    background: #fff;
 }
 
 .content-company{
 	position: relative;
+    padding-top: 62px;
     overflow: hidden;
-    background: linear-gradient(to bottom,  rgba(115,80,129,1) 0%,rgba(53,40,60,1) 100%); 
+    background: linear-gradient(to bottom,  rgba(115,80,129,1) 0%,rgba(53,40,60,1) 100%);
 }
 
 .block{
     float: left;
-    width: 80%;
-    height: 100px;
-    margin: 20px 5%;
-    background: green;
-}
+    width: 90%;
+    height: 140px;
+    margin: 0 0 25px 5%;
+    /*background: green;*/
 }
 
+.block-img{
+    height: 100%;
+    float: left;
+    margin-top: 10px;
+}
+
+.block-txt{
+    margin: 9px 0 0 53px;
+}
+
+.block-header{
+    color: #fff;
+    font: 400 24px / 24px 'League Gothic';
+}
+
+.block-info{
+    width: 193px;
+    color: #fff;
+    font: 300 16px / 24px OpenSans;
+    padding: 3px 0 12px 2px;
+}
+
+.block-ref{
+    color: #fff;
+    font: 400 18px / 24px 'League Gothic';
+    margin-left: 157px;
+    text-decoration: none;
+}
+
+.block-ref:hover{
+    text-shadow: 0 0 2em #fff;
+}
 
 @media (min-width: 480px){
     body{
@@ -110,13 +197,13 @@ ul {
     }
 }
 
-@media (min-width: 768px){
+@media (max-width: 768px){
     body{
        background: blue; 
     }
 }
 
-@media (min-width: 960px){
+@media (max-width: 960px){
     body{
        background: yellow; 
     }
