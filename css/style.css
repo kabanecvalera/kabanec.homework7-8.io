@@ -148,7 +148,7 @@ ul {
 
 .content-company{
 	position: relative;
-    padding-top: 62px;
+    padding-top: 63px;
     overflow: hidden;
     background: linear-gradient(to bottom,  rgba(115,80,129,1) 0%,rgba(53,40,60,1) 100%);
 }
@@ -156,10 +156,13 @@ ul {
 .block{
     float: left;
     width: 90%;
-    height: 140px;
-    margin: 0 0 25px 5%;
+    height: 152px;
+    margin: 0 0 40px 18px;
     padding-bottom: 14px;
-    /*background: green;*/
+}
+
+.middle{
+     margin: -49px 0 7px 18px;
 }
 
 .block-img{
@@ -171,7 +174,7 @@ ul {
 }
 
 .block-txt{
-    margin: 9px 0 0 53px;
+    margin: 9px 0 0 52px;
 }
 
 .block-header{
@@ -180,16 +183,18 @@ ul {
 }
 
 .block-info{
-    width: 193px;
+    width: 202px;
     color: #fff;
-    font: 300 16px / 24px OpenSans;
-    padding: 3px 0 12px 2px;
+    font: 300 16px / 24px 'Open Sans';
+    letter-spacing: -0.4px;
+    padding: 3px 0 12px 0;
 }
 
 .block-ref{
     color: #fff;
     font: 400 18px / 24px 'League Gothic';
     margin-left: 157px;
+    margin-top: 5px;
     text-decoration: none;
 }
 
@@ -198,6 +203,7 @@ ul {
 }
 
 .block-second{
+    width: 90%;
     height: 1220px;
     background: #fff;
 }
@@ -205,24 +211,26 @@ ul {
 .block-second-start{
     height: 205px;
     background: #fff;
-    padding-top: 89px;
+    padding-top: 90px;
 }
 
 .block-second-img{
     width: 49px;
     float: left;
-    margin-left: 10px;
+    margin-left: 8px;
 }
 
 .block-second-header{
-    margin-top: 6px;
+    margin: 6px 0 0 2px;
     color: #454545;
     font: 400 24px / 24px 'League Gothic';
     text-transform: uppercase;
+    letter-spacing: -0.1px;
 }
 
-.second-color{
-    color: #edbfff;        
+.second-color-txt{
+    color: #edbfff;
+    letter-spacing: 0.1px;
 }
 
 .block-second-content{
@@ -232,10 +240,9 @@ ul {
 }
 
 .block-second-txt{
-    margin-top: 5px;
+    margin: 4px 0 0 4px;
     color: #454545;
     font: 300 16px / 24px 'Open Sans';
-    font-style: italic;
     letter-spacing: -0.3px;
 }
 
@@ -266,26 +273,169 @@ ul {
     background: #000;
 }
 
+.block-second-recent{
+    width: 90%;
+    height: 200px;
+    margin: 49px 0 0 4px;
+}
+
+.recent-header{
+    color: #454545;
+    font: 400 30px / 24px 'League Gothic';
+    padding-left: 2px;
+}
+
+.recent-block{
+    width: 300px;
+    height: 50px;
+    margin: 19px 0 -5px 0;
+}
+
+.medial{
+    padding: 1px 0 7px 0;
+}
+
 .recent-img-first{
     background: url(../img/sprite.png) -3px -95px;
-	width: 55px;
-	height: 54px;  
+	width: 54px;
+	height: 54px;
+    margin-top: -3px;
 }
 
 .recent-img-second{
     background: url(../img/sprite.png) -3px -148px;
 	width: 54px;
-	height: 55px;
-  
+	height: 54px;
+    margin-top: -3px;
 }
 
 .recent-img-third{
     background: url(../img/sprite.png) -5px -199px;
-	width: 53px;
-	height: 56px;  
+	width: 54px;
+	height: 54px;
+    margin-top: -3px;
 }
 
-@media (min-width: 480px){
+.recent-block-txt{
+    width: 231px;
+    float: right;
+}
+
+.recent-txt{
+    color: #454545;
+    font: 700 16px / 24px 'Open Sans';
+    letter-spacing: 0.25px
+}
+
+.recent-ref{
+    color: #454545;
+    font: 300 16px / 24px 'Open Sans';
+    text-decoration: none;
+    letter-spacing: -0.4px;
+}
+
+.recent-more{
+    margin-left: 189px;
+    color: #454545;
+    font: 400 19px / 40px 'League Gothic';
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: -0.3px;
+}
+
+.block-second-recent:after{
+    content: "";
+    width: 350px;
+    height: 1px;
+    position: absolute;
+    top: 1902px;
+    left: 495px;
+    background: #000;
+}
+
+
+.block-company-ref{
+    width: 223px;
+    margin: 205px 0 0 50px;
+    position: relative;
+}
+
+.company-ref1{
+    background: url(../img/sprite.png) -74px -122px ;
+	width: 75px;
+    height: 64px;
+    position: absolute;
+    top: 1px;
+    left: -1px;
+}
+
+.company-ref2{
+    background: url(../img/sprite.png) -73px -55px ;
+	width: 72px;
+	height: 64px;
+    position: absolute;
+    top: 0;
+    left: 123px;
+}
+
+.company-ref3{
+    background: url(../img/sprite.png) -76px -191px ;
+	width: 68px;
+	height: 65px;
+    position: absolute;
+    top: 125px;
+    left: 6px;
+}
+
+.company-ref4{
+    background: url(../img/sprite.png) -84px -260px ;
+	width: 69px;
+	height: 65px;
+    position: absolute;
+    top: 126px;
+    left: 129px;
+}
+
+.company-ref5{
+    background: url(../img/sprite.png) -17px -334px ;
+	width: 115px;
+	height: 35px;
+    position: absolute;
+    top: 249px;
+    left: -28px;
+}
+
+.company-ref6{
+    background: url(../img/sprite.png) 0 -251px ;
+	width: 85px;
+	height: 80px;
+    position: absolute;
+    top: 224px;
+    left: 135px;
+}
+
+.footer {
+    clear: both;
+    margin-top: -10px;
+    height: 114px;
+    background-image: url(../img/footer-min.jpg);
+}
+
+.footer-txt{
+    padding: 31px 0 0 77px;
+}
+
+.footer-ref{
+    color: #fff;
+    font: 300 12px / 33.724px 'Open Sans';
+    text-decoration: none;
+}
+
+.bold{
+    color: #fff;
+    font: 700 12px / 33.724px 'Open Sans';    
+}
+@media (max-width: 480px){
     body{
        background: green; 
     }
@@ -301,10 +451,4 @@ ul {
     body{
        background: yellow; 
     }
-}
-
-.footer {
-    clear: both;
-    height: 114px;
-    background-image: url(../img/footer-min.jpg);
 }
